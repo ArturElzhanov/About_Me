@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="elzhanov.about_me.MainActivity">
+
+    <ImageView
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:src="@drawable/test"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/landscape_text_size"
+            android:padding="@dimen/padding_size"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/name"
+            android:id="@+id/text_name"
+            android:layout_below="@+id/imageView" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_toLeftOf="@+id/listView"
+            android:layout_toStartOf="@+id/listView"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/landscape_text_size"
+            android:padding="@dimen/padding_size"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/sir_name"
+            android:id="@+id/text_sir_name"
+            android:layout_below="@+id/text_name" android:layout_alignLeft="@+id/text_name"
+            android:layout_alignStart="@+id/text_name" android:layout_marginTop="@dimen/midddle_size"
+            android:layout_alignRight="@+id/text_name" android:layout_alignEnd="@+id/text_name"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/landscape_text_size"
+            android:padding="@dimen/padding_size"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/middle_name"
+            android:id="@+id/text_m_name"
+            android:layout_below="@+id/text_sir_name" android:layout_alignLeft="@+id/text_sir_name"
+            android:layout_alignStart="@+id/text_sir_name" android:layout_marginTop="@dimen/midddle_size"
+            android:layout_alignRight="@+id/text_sir_name" android:layout_alignEnd="@+id/text_sir_name"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/landscape_text_size"
+            android:padding="@dimen/padding_size"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/e_mail"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/text_m_name" android:layout_alignLeft="@+id/text_m_name"
+            android:layout_alignStart="@+id/text_m_name" android:layout_marginTop="@dimen/midddle_size"
+            android:layout_alignRight="@+id/text_name" android:layout_alignEnd="@+id/text_name"/>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_height"
+            android:id="@+id/listView"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/imageView" android:layout_toEndOf="@+id/imageView"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:textColor="@color/txt_color"
+            android:id="@+id/text_orient"
+            android:layout_alignParentBottom="true" android:layout_alignRight="@+id/listView"
+            android:layout_alignEnd="@+id/listView" android:layout_marginRight="@dimen/margin_size"
+            android:layout_marginEnd="@dimen/margin_size"/>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<resources>
+
+    <!--Main Strings-->
+    <string name="app_name">About_Me</string>
+
+
+    <!--MyAccount Strings-->
+    <string name="name">name:\nArtur</string>
+    <string name="sir_name">surname:\nElzhanov</string>
+    <string name="middle_name">middle name:\nMuratovich</string>
+    <string name="e_mail">mail address:\nsnpi@mail.ru</string>
+
+    <!--Professional Skills Array String-->
+    <string-array name="prof_skills">
+        <item>Professional skills:</item>
+        <item>1.Experience in developing desktop and Android applications on Java</item>
+        <item>2.Experience in design and development of client-server applications</item>
+        <item>3.Ability to quickly understand someone else code</item>
+        <item>4.Good knowledge of basic design patterns</item>
+        <item>5.A creative approach to the tasks</item>
+        <item>6.Ability and desire to learn new skills and develop new technologies.</item>
+
+    </string-array>
+
+    <!--Orientation strings-->
+    <string name="my_text">Portrait orientation</string>
+
+</resources>
