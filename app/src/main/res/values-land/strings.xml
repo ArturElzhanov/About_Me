@@ -1,0 +1,18 @@
+<resources>
+
+    <!--Main Strings-->
+    <string name="app_name">About_Me</string>
+
+    <string name="l_profSkills">Professional skills:</string>
+
+    <!--Professional Skills Array String-->
+    <string name="prof_skills">
+        \nExperience in developing desktop and Android applications on Java.\n
+        \nExperience in design and development of client-server applications.\n
+        \nAbility to quickly understand someone else code.\n
+        \nGood knowledge of basic design patterns.\n
+        \nA creative approach to the tasks.\n
+        \nAbility and desire to learn new skills and develop new technologies.
+    </string>
+
+</resources>
