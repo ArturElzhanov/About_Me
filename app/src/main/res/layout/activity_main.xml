@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/gradient"
+        android:background="@color/colorPrimaryLight"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
@@ -12,71 +12,157 @@
         tools:context="elzhanov.about_me.MainActivity">
 
     <ImageView
-            android:layout_width="@dimen/image_width"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/image_height"
-            android:src="@drawable/test"
+            android:src="@drawable/photo_portrait_sm"
             android:id="@+id/imageView"
-            android:layout_alignParentTop="true"/>
-    <TextView
+            android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|start"
+            android:layout_marginTop="@dimen/margin_top_size"
+            android:layout_marginLeft="@dimen/margin_left_size"
+            android:layout_marginStart="@dimen/margin_left_size"
+            android:background="@color/colorPrimaryLight"
+            android:layout_below="@+id/imageView" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false" android:id="@+id/linearLayout">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/portrait_text_large_size"
+                    android:textColor="@color/main_txt"
+                    android:text="@string/my_name"
+                    android:id="@+id/txt_my_name"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/portrait_text_small_size"
+                    android:textColor="@color/second_txt"
+                    android:layout_marginBottom="@dimen/margin_bottom_size"
+                    android:text="@string/name"
+                    android:id="@+id/txt_name"/>
+
+            <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/portrait_text_large_size"
+                    android:textColor="@color/main_txt"
+                    android:text="@string/my_sir_name"
+                    android:id="@+id/txt_my_sir_name"/>
+            <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/portrait_text_small_size"
+                    android:textColor="@color/second_txt"
+                    android:text="@string/sir_name"
+                    android:layout_marginBottom="@dimen/margin_bottom_size"
+                    android:id="@+id/txt_sir_name"/>
+
+            <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/portrait_text_large_size"
+                    android:textColor="@color/main_txt"
+                    android:text="@string/my_last_name"
+                    android:id="@+id/txt_my_last_name"/>
+            <TextView 
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/portrait_text_small_size"
+                    android:textColor="@color/second_txt"
+                    android:text="@string/last_name"
+                    android:layout_marginBottom="@dimen/margin_bottom_size"
+                    android:id="@+id/txt_last_name"/>
+
+            <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/portrait_text_large_size"
+                    android:textColor="@color/main_txt"
+                    android:text="@string/my_e_mail"
+                    android:id="@+id/txt_my_mail"/>
+            <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/portrait_text_small_size"
+                    android:textColor="@color/second_txt"
+                    android:text="@string/e_mail"
+                    android:id="@+id/txt_mail_address"/>
+
+    </LinearLayout>
+    <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/portrait_text_size"
-            android:padding="@dimen/padding_size"
-            android:textColor="@color/blue"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/name"
-            android:id="@+id/text_name" android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/imageView"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
-    <TextView
+            android:src="@android:drawable/ic_dialog_info"
+            android:id="@+id/imageView2" android:layout_alignTop="@+id/linearLayout"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/portrait_text_size"
-            android:padding="@dimen/padding_size"
-            android:textColor="@color/blue"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/sir_name"
-            android:id="@+id/text_sir_name"
-            android:layout_below="@+id/text_name" android:layout_alignLeft="@+id/text_name"
-            android:layout_alignStart="@+id/text_name" android:layout_marginTop="@dimen/midddle_size"
-    />
-    <TextView
-            android:layout_width="wrap_content"
+            android:src="@android:drawable/ic_dialog_email"
+            android:id="@+id/imageView3" android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:onClick="onBtnShowText"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:background="@drawable/oval"
+            android:textSize="@dimen/button_text_size"
+            android:textColor="@color/white"
+            android:text="@string/button_text"
+            android:elevation="@dimen/button_elev_size"
+            android:layout_marginTop="@dimen/button_margin_top_size"
+            android:id="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_below="@+id/imageView3"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight"
+            android:layout_alignLeft="@+id/linearLayout" android:layout_alignStart="@+id/linearLayout"
+            android:layout_alignTop="@+id/button" android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout2">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/portrait_text_large_size"
+                android:textColor="@color/main_txt"
+                android:scrollbars="vertical"
+                android:text="@string/profSkills"
+                android:id="@+id/prof_skills"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/show_skills"
+                android:textColor="@color/second_txt"
+                android:textSize="@dimen/portrait_text_small_size"
+                android:id="@+id/txt_show_skills"/>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/portrait_text_size"
-            android:padding="@dimen/padding_size"
-            android:textColor="@color/blue"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/middle_name"
-            android:id="@+id/text_m_name"
-            android:layout_below="@+id/text_sir_name" android:layout_alignLeft="@+id/text_sir_name"
-            android:layout_alignStart="@+id/text_sir_name" android:layout_marginTop="@dimen/midddle_size"
-    />
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/portrait_text_size"
-            android:padding="@dimen/padding_size"
-            android:textColor="@color/blue"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/e_mail"
-            android:id="@+id/textView5"
-            android:layout_below="@+id/text_m_name" android:layout_alignLeft="@+id/text_m_name"
-            android:layout_alignStart="@+id/text_m_name" android:layout_marginTop="@dimen/midddle_size"
-    />
-    <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/list_height"
-            android:id="@+id/listView" android:layout_below="@+id/imageView" android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-    />
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text=""
-            android:textColor="@color/txt_color"
-            android:id="@+id/text_orient"
-            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            android:background="@color/main_txt"
+            android:src="@drawable/line"
+            android:layout_marginBottom="@dimen/margin_bottom_size"
+            android:id="@+id/imageView4" android:layout_above="@+id/linearLayout2" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+
 </RelativeLayout>

@@ -5,24 +5,30 @@
 
 
     <!--MyAccount Strings-->
-    <string name="name">name:\nArtur</string>
-    <string name="sir_name">surname:\nElzhanov</string>
-    <string name="middle_name">middle name:\nMuratovich</string>
-    <string name="e_mail">mail address:\nsnpi@mail.ru</string>
+    <string name="name">Name</string>
+    <string name="my_name">Artur</string>
+    <string name="sir_name">Surname</string>
+    <string name="my_sir_name">Elzhanov</string>
+    <string name="last_name">Last name</string>
+    <string name="my_last_name">Muratovich</string>
+    <string name="e_mail">Mail address</string>
+    <string name="my_e_mail">senpai@mail.ru</string>
+    <string name="profSkills">Professional skills</string>
+    <string name="show_skills">Press S or rotate screen to show skills</string>
+
+    <!--Button strings-->
+    <string name="button_text">S</string>
 
     <!--Professional Skills Array String-->
     <string-array name="prof_skills">
-        <item>Professional skills:</item>
-        <item>1.Experience in developing desktop and Android applications on Java</item>
-        <item>2.Experience in design and development of client-server applications</item>
-        <item>3.Ability to quickly understand someone else code</item>
-        <item>4.Good knowledge of basic design patterns</item>
-        <item>5.A creative approach to the tasks</item>
+        <item>Professional skills</item>
+        <item>1.Experience in developing desktop and Android applications on Java.</item>
+        <item>2.Experience in design and development of client-server applications.</item>
+        <item>3.Ability to quickly understand someone else code.</item>
+        <item>4.Good knowledge of basic design patterns.</item>
+        <item>5.A creative approach to the tasks.</item>
         <item>6.Ability and desire to learn new skills and develop new technologies.</item>
 
     </string-array>
-
-    <!--Orientation strings-->
-    <string name="my_text">Portrait orientation</string>
 
 </resources>
