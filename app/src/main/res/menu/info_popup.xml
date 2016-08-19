@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:icon="@android:drawable/ic_menu_more"
+            android:id="@+id/show_more"
+            android:title="@string/show_more"/>
+
+    <item
+            android:icon="@android:drawable/ic_menu_edit"
+            android:id="@+id/edit_account"
+            android:title="@string/edit_account"/>
+</menu>

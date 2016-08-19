@@ -1,8 +1,11 @@
 <resources>
 
     <!--Image size-->
-    <dimen name="image_width">120dp</dimen>
-    <dimen name="image_height">152dp</dimen>
+    <dimen name="image_width">112dp</dimen>
+    <dimen name="image_height">144dp</dimen>
+
+    <!--Text size-->
+    <dimen name="portrait_text_medium_size">14sp</dimen>
 
 
 </resources>

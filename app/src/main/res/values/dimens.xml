@@ -11,9 +11,9 @@
     <!--Layout size-->
     <dimen name="padding_size">2dp</dimen>
     <dimen name="margin_size">8dp</dimen>
-    <dimen name="margin_bottom_size">24dp</dimen>
+    <dimen name="margin_bottom_size">16dp</dimen>
     <dimen name="margin_top_size">16dp</dimen>
-    <dimen name="margin_left_size">72dp</dimen>
+    <dimen name="margin_left_size">56dp</dimen>
     <dimen name="radius_size">4dp</dimen>
     <dimen name="elev_size">8dp</dimen>
 
@@ -26,7 +26,7 @@
 
     <!--Image size-->
     <dimen name="image_width">168dp</dimen>
-    <dimen name="image_height">192dp</dimen>
+    <dimen name="image_height">200dp</dimen>
 
 
 

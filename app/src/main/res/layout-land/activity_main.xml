@@ -29,74 +29,51 @@
             android:layout_alignEnd="@+id/imageView">
 
             <TextView
+                    android:textIsSelectable="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="@dimen/portrait_text_large_size"
+                    android:textSize="@dimen/portrait_text_medium_size"
                     android:textColor="@color/main_txt"
                     android:text="@string/my_name"
+                    android:layout_marginBottom="@dimen/margin_bottom_size"
                     android:id="@+id/txt_my_name"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textSize="@dimen/portrait_text_small_size"
-                    android:layout_marginBottom="@dimen/margin_size"
-                    android:textColor="@color/second_txt"
-                    android:text="@string/name"
-                    android:id="@+id/txt_name"/>
+
 
             <TextView
+                    android:textIsSelectable="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="@dimen/portrait_text_large_size"
+                    android:textSize="@dimen/portrait_text_medium_size"
                     android:textColor="@color/main_txt"
                     android:text="@string/my_sir_name"
+                    android:layout_marginBottom="@dimen/margin_bottom_size"
                     android:id="@+id/txt_my_sir_name"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textSize="@dimen/portrait_text_small_size"
-                    android:layout_marginBottom="@dimen/margin_size"
-                    android:textColor="@color/second_txt"
-                    android:text="@string/sir_name"
-                    android:id="@+id/txt_sir_name"/>
+
 
             <TextView
+                    android:textIsSelectable="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="@dimen/portrait_text_large_size"
+                    android:textSize="@dimen/portrait_text_medium_size"
                     android:textColor="@color/main_txt"
                     android:text="@string/my_last_name"
+                    android:layout_marginBottom="@dimen/margin_bottom_size"
                     android:id="@+id/txt_my_last_name"/>
-            <TextView
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textSize="@dimen/portrait_text_small_size"
-                    android:textColor="@color/second_txt"
-                    android:layout_marginBottom="@dimen/margin_size"
-                    android:text="@string/last_name"
-                    android:id="@+id/txt_last_name"/>
+
 
             <TextView
+                    android:textIsSelectable="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="@dimen/portrait_text_large_size"
+                    android:textSize="@dimen/portrait_text_medium_size"
                     android:textColor="@color/main_txt"
                     android:text="@string/my_e_mail"
                     android:id="@+id/txt_my_mail"/>
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textSize="@dimen/portrait_text_small_size"
-                    android:textColor="@color/second_txt"
-                    android:text="@string/e_mail"
-                    android:id="@+id/txt_mail_address"/>
+
 
     </LinearLayout>
     <LinearLayout
@@ -106,6 +83,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/frame"
             android:padding="@dimen/padding_size"
+            android:layout_marginStart="@dimen/margin_size"
             android:layout_marginLeft="@dimen/margin_size"
             android:layout_alignTop="@+id/imageView"
             android:layout_toEndOf="@+id/imageView"
@@ -119,6 +97,7 @@
                 android:text="@string/l_profSkills"
                 android:id="@+id/txt_l_profSkills" android:layout_gravity="center_horizontal"/>
         <TextView
+                android:textIsSelectable="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"

@@ -19,6 +19,42 @@
     <!--Button strings-->
     <string name="button_text">S</string>
 
+    <!--Menu strings-->
+    <string name="edit_profile">Edit profile</string>
+    <string name="settings">Settings</string>
+    <string name="delete">Delete</string>
+    <string name="share_profile">Share profile</string>
+
+    <!--Popap strings-->
+    <string name="show_more">Show all</string>
+    <string name="add_info">Add info</string>
+    <string name="send_email">Send message</string>
+    <string name="add_mail">Add email </string>
+    <string name="show_time">Show time</string>
+    <string name="edit_account">Edit Account</string>
+
+
+    <!--Dialog strings-->
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Second activity strings-->
+    <string name="ok">OK</string>
+    <string name="_8987_80">8987...80</string>
+    <string name="phone_num">Phone num</string>
+    <string name="_23_12_1984">23.12.1984</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="kazan_technological_univercity">Kazan Technological Univercity</string>
+    <string name="education">Education</string>
+    <string name="martial_arts">Martial Arts</string>
+    <string name="hobby">Hobby</string>
+    <string name="status">Status</string>
+    <string name="married">Married</string>
+    <string name="data">Current Data</string>
+    <string name="time">Current Time</string>
+    <string name="choose_data">Choose data</string>
+    <string name="choose_time">Choose time</string>
+
     <!--Professional Skills Array String-->
     <string-array name="prof_skills">
         <item>Professional skills</item>

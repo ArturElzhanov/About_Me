@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+            android:id="@+id/share_profile"
+            android:title="@string/share_profile"/>
+
+    <item
+            android:id="@+id/settings"
+            android:title="@string/settings"/>
+
+    <item
+            app:showAsAction="ifRoom"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:id="@+id/show_time"
+            android:title="@string/show_time"/>
+
+</menu>
