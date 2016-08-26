@@ -1,4 +1,4 @@
-package elzhanov.about_me;
+package elzhanov.about_me.ui.fragments;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatDialogFragment;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import elzhanov.about_me.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

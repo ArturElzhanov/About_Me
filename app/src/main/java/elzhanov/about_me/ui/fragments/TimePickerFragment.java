@@ -1,4 +1,4 @@
-package elzhanov.about_me;
+package elzhanov.about_me.ui.fragments;
 
 import android.app.Dialog;
 import android.app.TimePickerDialog;
@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatDialogFragment;
 import android.text.format.DateFormat;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import elzhanov.about_me.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -31,8 +32,7 @@ public class TimePickerFragment extends AppCompatDialogFragment implements TimeP
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
         TextView txt_1 = (TextView) getActivity().findViewById(R.id.txt_time);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:aaa");
-        String strTime = dateFormat.format(new Date());
+        String strTime = hourOfDay+":"+minute;
         txt_1.setText(strTime);
     }
 }

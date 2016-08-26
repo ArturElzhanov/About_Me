@@ -1,4 +1,4 @@
-package elzhanov.about_me;
+package elzhanov.about_me.ui.fragments;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatDialogFragment;
 import android.view.LayoutInflater;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.view.View;
+import elzhanov.about_me.R;
 
 /**
  * Created by User on 19.08.2016.
@@ -18,14 +20,15 @@ public class EditAccountFragment extends AppCompatDialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        builder.setTitle(R.string.edit_profile)
-                .setView(inflater.inflate(R.layout.dialog_edit_account,null,false))
-                .setPositiveButton(R.string.add, new DialogInterface.OnClickListener() {
+        builder.setTitle(R.string.edit_profile);
+        final View v= inflater.inflate(R.layout.dialog_edit_account,null,false);
+        builder.setView(v)
+               .setPositiveButton(R.string.add, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        EditText editText_1 = (EditText) getActivity().findViewById(R.id.editText);
-                        EditText editText_2 = (EditText) getActivity().findViewById(R.id.editText2);
-                        EditText editText_3 = (EditText) getActivity().findViewById(R.id.editText3);
+                        EditText editText_1 = (EditText) v.findViewById(R.id.editText);
+                        EditText editText_2 = (EditText) v.findViewById(R.id.editText2);
+                        EditText editText_3 = (EditText) v.findViewById(R.id.editText3);
                         TextView txt_1 = (TextView) getActivity().findViewById(R.id.txt_my_name);
                         TextView txt_2 = (TextView) getActivity().findViewById(R.id.txt_my_sir_name);
                         TextView txt_3 = (TextView) getActivity().findViewById(R.id.txt_my_last_name);

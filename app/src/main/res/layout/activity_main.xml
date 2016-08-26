@@ -2,6 +2,7 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/MainRelative"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryLight"
@@ -9,7 +10,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
-        tools:context="elzhanov.about_me.MainActivity">
+        tools:context=".ui.activity.MainActivity">
 
     <ImageView
             android:layout_width="@dimen/image_width"
@@ -143,18 +144,14 @@
             android:layout_height="match_parent"
             android:background="@color/colorPrimaryLight"
             android:layout_alignLeft="@+id/linearLayout" android:layout_alignStart="@+id/linearLayout"
-            android:layout_alignTop="@+id/button"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginTop="@dimen/margin_top_size"
+
             android:id="@+id/linearLayout2">
-        <TextView
-                android:textIsSelectable="true"
-                android:layout_width="wrap_content"
+        <Spinner
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textSize="@dimen/portrait_text_large_size"
-                android:textColor="@color/main_txt"
-                android:scrollbars="vertical"
-                android:text="@string/profSkills"
-                android:id="@+id/prof_skills"/>
+                android:id="@+id/spinner" android:layout_weight="0.5"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
