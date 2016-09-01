@@ -24,6 +24,7 @@
     <string name="settings">Settings</string>
     <string name="delete">Delete</string>
     <string name="share_profile">Share profile</string>
+    <string name="linkedin_profile">Linkedin profile</string>
 
     <!--Popap strings-->
     <string name="show_more">Show all</string>
@@ -40,6 +41,7 @@
 
     <!--Second activity strings-->
     <string name="ok">OK</string>
+    <string name="show_all_profile">Show all profile</string>
     <string name="_8987_80">8987...80</string>
     <string name="phone_num">Phone num</string>
     <string name="_23_12_1984">23.12.1984</string>
@@ -48,17 +50,16 @@
     <string name="education">Education</string>
     <string name="martial_arts">Martial Arts</string>
     <string name="hobby">Hobby</string>
-    <string name="status">Status</string>
-    <string name="married">Married</string>
-    <string name="data">Current Data</string>
-    <string name="time">Current Time</string>
-    <string name="choose_data">Choose data</string>
-    <string name="choose_time">Choose time</string>
+
+
 
     <!--Setting strings-->
     <string name="background">Background color</string>
     <string name="text_color">Text color</string>
     <string name="choose_color">Choose color</string>
+    <string name="set_colors">Set colors</string>
+    <string name="some_text">Some text</string>
+
 
     <!--Professional Skills Array String-->
     <string-array name="prof_skills">

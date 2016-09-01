@@ -3,26 +3,27 @@
 
     <item
 
-            android:id="@+id/share_profile"
-            android:title="@string/share_profile"/>
+            android:id="@+id/linkedin_profile"
+            android:title="@string/linkedin_profile"/>
+    <item
+            android:icon="@android:drawable/ic_menu_more"
+            android:id="@+id/show_all_profile"
+            android:title="@string/show_all_profile"
+            app:showAsAction="ifRoom"
+
+            />
 
     <item
             android:id="@+id/settings"
             android:title="@string/settings">
             <menu>
                 <item
-                    android:id="@+id/set_back"
-                    android:title="@string/background"/>
-                <item
-                    android:id="@+id/set_text_color"
-                    android:title="@string/text_color"/>
+                    android:id="@+id/set_colors"
+                    android:title="@string/set_colors"/>
+
             </menu>
 
     </item>
-    <item
-            app:showAsAction="ifRoom"
-            android:icon="@android:drawable/ic_menu_my_calendar"
-            android:id="@+id/show_time"
-            android:title="@string/show_time"/>
+
 
 </menu>

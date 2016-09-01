@@ -1,7 +1,7 @@
 package elzhanov.about_me.ui.activity;
 
 import android.content.Intent;
-import android.content.res.Resources;
+import android.net.Uri;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,40 +11,48 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import elzhanov.about_me.*;
-import elzhanov.about_me.ui.fragments.AddMailDialogFragment;
 import elzhanov.about_me.ui.fragments.ChooseBackColorDialogFragment;
-import elzhanov.about_me.ui.fragments.ChooseStringColorDialogFragment;
 import elzhanov.about_me.ui.fragments.EditAccountFragment;
 
 
 public class MainActivity extends AppCompatActivity {
 
 
+    private TextView name;
+    private TextView sname;
+    private TextView lname;
+    private TextView mail;
+
     private Spinner spSpin = null;
-    private ImageView infoView;
-    private ImageView mailView;
+
+    public MainActivity() {
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ui();
 
-        initSpinner();
-
-        initImagePush();
     }
 
-    private void initImagePush() {
-        infoView = (ImageView) findViewById(R.id.image_info);
-        mailView = (ImageView) findViewById(R.id.image_mail);
+    private void ui() {
+        name = (TextView) findViewById(R.id.txt_my_name);
+        sname = (TextView) findViewById(R.id.txt_my_sir_name);
+        lname = (TextView) findViewById(R.id.txt_my_last_name) ;
+        mail = (TextView) findViewById(R.id.txt_my_mail);
         try {
-            infoView.setOnClickListener(viewClickListenerInfo);
-            mailView.setOnClickListener(viewClickListenerMail);
+            name.setText(R.string.my_name);
+            sname.setText(R.string.my_sir_name);
+            lname.setText(R.string.my_last_name);
+            mail.setText(R.string.my_e_mail);
         } catch (Exception e) {
             e.printStackTrace();
         }
+        initSpinner();
     }
-// проф. навыки решил сделать выпадающим списком
+
     private void initSpinner() {
         spSpin = (Spinner) this.findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.prof_skills,R.layout.spin_item);
@@ -56,19 +64,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private View.OnClickListener viewClickListenerInfo = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            initPopup(v,R.menu.info_popup);
-        }
-    };
 
-    private View.OnClickListener viewClickListenerMail = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            initPopup(v,R.menu.mail_popup);
-        }
-    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -79,22 +75,27 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.share_profile:
-                // TODO: 26.08.2016 Хочу отправлять профиль по сети, но мы пока работу с сетью не проходили
+            case R.id.linkedin_profile:
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://ru.linkedin.com/in/artur-elzhanov-8aa2a9128"));
+                startActivity(browserIntent);
                 break;
-            case R.id.show_time:
-                startActivity(new Intent(getApplicationContext(), ShowCurrentTimeAndDataActivity.class));
+
+
+            case R.id.show_all_profile:
+                Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+                intent.putExtra("photo", R.drawable.photo_portrait_sm);
+                intent.putExtra("full name", name.getText()+" "+sname.getText()+" "+lname.getText());
+                intent.putExtra("ic_mail",android.R.drawable.ic_dialog_email);
+                intent.putExtra("my_mail", mail.getText()+" ");
+                startActivity(intent);
                 break;
-            case R.id.set_back:
+
+            case R.id.set_colors:
                 //создаю диалог выбора цвета фона
                 DialogFragment backColor = new ChooseBackColorDialogFragment();
                 backColor.show(getSupportFragmentManager(),"BACK_COLOR");
                 break;
-            case R.id.set_text_color:
-                //создаю диалог выбора цвета текста
-                DialogFragment textColor = new ChooseStringColorDialogFragment();
-                textColor.show(getSupportFragmentManager(),"TEXT_COLOR");
-                break;
+
         }
         return super.onOptionsItemSelected(item);
     }
@@ -102,41 +103,5 @@ public class MainActivity extends AppCompatActivity {
     public void onBtnShowText(View view) {
         // TODO: 26.08.2016 не реализованное пока добавление навыков, от нажатия кнопки
     }
-//метод для создания плавающих окон
-    public void initPopup(View view, int id) {
-        PopupMenu popupMenu = new PopupMenu(this, view);
-        popupMenu.inflate(id);
-        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(final MenuItem item) {
-                switch (item.getItemId()){
-                    //показываю расширенную информацию о себе
-                    case R.id.show_more:
-                        startActivity(new Intent(getApplicationContext(), SecondActivity.class));
-                        break;
-                    //замена данных в аккаунте
-                    case R.id.edit_account:
-                        DialogFragment accountDialog = new EditAccountFragment();
-                        accountDialog.show(getSupportFragmentManager(),"EDIT_ACCOUNT");
-                        break;
-                    case R.id.send_message:
-                        Toast.makeText(getApplicationContext(), "send message", Toast.LENGTH_SHORT).show();
-                        break;
-                    //добавляю адреса
-                    case R.id.add_mail:
-                        DialogFragment mailDialog = new AddMailDialogFragment();
-                        mailDialog.show(getSupportFragmentManager(), "ADD_MAIL");
-                        break;
-                }
 
-                return false;
-            }
-        });
-        popupMenu.setOnDismissListener(new PopupMenu.OnDismissListener() {
-            @Override
-            public void onDismiss(final PopupMenu menu) {
-            }
-        });
-        popupMenu.show();
-    }
 }

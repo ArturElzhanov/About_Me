@@ -29,13 +29,20 @@ public class EditAccountFragment extends AppCompatDialogFragment {
                         EditText editText_1 = (EditText) v.findViewById(R.id.editText);
                         EditText editText_2 = (EditText) v.findViewById(R.id.editText2);
                         EditText editText_3 = (EditText) v.findViewById(R.id.editText3);
+                        EditText editText_4 = (EditText) v.findViewById(R.id.editText4);
+                        EditText editText_5 = (EditText) v.findViewById(R.id.editText5);
+                        EditText editText_6 = (EditText) v.findViewById(R.id.editText6);
+                        EditText editText_7 = (EditText) v.findViewById(R.id.editText7);
+                        EditText editText_8 = (EditText) v.findViewById(R.id.editText8);
                         TextView txt_1 = (TextView) getActivity().findViewById(R.id.txt_my_name);
                         TextView txt_2 = (TextView) getActivity().findViewById(R.id.txt_my_sir_name);
                         TextView txt_3 = (TextView) getActivity().findViewById(R.id.txt_my_last_name);
+                        TextView txt_4 = (TextView) getActivity().findViewById(R.id.txt_my_mail);
                         try {
                             txt_1.setText(editText_1.getText());
                             txt_2.setText(editText_2.getText());
                             txt_3.setText(editText_3.getText());
+                            txt_4.setText(editText_4.getText());
                         } catch (Exception e) {
                             e.printStackTrace();
                         }

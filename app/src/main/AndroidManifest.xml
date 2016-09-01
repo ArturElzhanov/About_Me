@@ -20,9 +20,6 @@
 
         </activity>
 
-        <activity android:name=".ui.activity.ShowCurrentTimeAndDataActivity">
-
-        </activity>
-</application>
+    </application>
 
 </manifest>

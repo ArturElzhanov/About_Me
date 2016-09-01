@@ -4,14 +4,10 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-
-    <EditText
+    <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/editMailText"
-            android:hint="@string/add_mail"
-            android:layout_margin="@dimen/margin_size"
-            android:layout_gravity="center_horizontal"/>
+            android:id="@+id/lv"
+            android:layout_gravity="center_horizontal"
+    />
 </LinearLayout>

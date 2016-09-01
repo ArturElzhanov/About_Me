@@ -25,4 +25,39 @@
             android:hint="@string/last_name"
             android:ems="10"
             android:id="@+id/editText3" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/e_mail"
+            android:ems="10"
+            android:id="@+id/editText4" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/phone_num"
+            android:ems="10"
+            android:id="@+id/editText5" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/date_of_birth"
+            android:ems="10"
+            android:id="@+id/editText6" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/education"
+            android:ems="10"
+            android:id="@+id/editText7" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/hobby"
+            android:ems="10"
+            android:id="@+id/editText8" android:layout_gravity="center_horizontal"/>
 </LinearLayout>

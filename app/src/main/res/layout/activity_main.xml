@@ -38,7 +38,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textSize="@dimen/portrait_text_large_size"
                     android:textColor="@color/main_txt"
-                    android:text="@string/my_name"
+                    android:text="@string/some_text"
                     android:id="@+id/txt_my_name"/>
             <TextView
                     android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textSize="@dimen/portrait_text_large_size"
                     android:textColor="@color/main_txt"
-                    android:text="@string/my_sir_name"
+                    android:text="@string/some_text"
                     android:id="@+id/txt_my_sir_name"/>
             <TextView 
                     android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textSize="@dimen/portrait_text_large_size"
                     android:textColor="@color/main_txt"
-                    android:text="@string/my_last_name"
+                    android:text="@string/some_text"
                     android:id="@+id/txt_my_last_name"/>
             <TextView 
                     android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textSize="@dimen/portrait_text_large_size"
                     android:textColor="@color/main_txt"
-                    android:text="@string/my_e_mail"
+                    android:text="@string/some_text"
                     android:id="@+id/txt_my_mail"/>
             <TextView 
                     android:layout_width="wrap_content"
@@ -150,7 +150,7 @@
             android:id="@+id/linearLayout2">
         <Spinner
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:id="@+id/spinner" android:layout_weight="0.5"/>
         <TextView
                 android:layout_width="wrap_content"
